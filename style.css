@@ -1,16 +1,20 @@
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 800px;
+}
+
+.center {
+    text-align: center;
 }
 
 .slides {
-    height: calc(100vh - 2rem);
     width: 100%;
     display: flex;
     margin: 0;
     padding: 0;
     overflow: scroll;
     scroll-behavior: smooth;
+    position: relative;
 }
 
 .slide {
@@ -20,10 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.slides {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 /* WebKit */
 .slides::-webkit-scrollbar { 
@@ -36,11 +36,10 @@ img {
     height: auto;
 }
 
-button.prev, button.next  {
-    position: absolute;
-    top: 40%;
-}
-
-.next {
-    right: 10%;
+.slide-arrow {
+    margin: 0 2rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
 }
