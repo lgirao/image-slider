@@ -37,8 +37,9 @@ img {
 }
 
 .slide-arrow {
+    color: #b5b2b2;
     margin: 0 2rem;
-    background-color: white;
+    background-color: #fff;
     border: none;
     cursor: pointer;
     font-size: 3rem;
